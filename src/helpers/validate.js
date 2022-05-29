@@ -7,6 +7,7 @@ export const isNameValid = (name) => {
 //email validation method
 export const isEmailValid = (email) => {
   //returns true if the email matches the regex for a valid email else returns false
+  // eslint-disable-next-line no-useless-escape
   return /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(
     email
   );
